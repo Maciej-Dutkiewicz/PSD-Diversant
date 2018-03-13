@@ -1,0 +1,92 @@
+@media(min-width: 768px) and (max-width: 991px) {}
+
+@media(min-width: 992px) and (max-width: 1199px) {}
+
+@media(min-width: 1200px) {}
+
+/* @media(max-width: 767px) {
+    .map {
+        max-width: 767px;
+    }
+} */
+
+@media only screen and (max-width: 767px) {
+    html {
+        max-width: 100%;
+        
+    }
+    body {
+        max-width: 100%;
+    }
+    .map {
+        max-width: 100%;
+    }
+    .map-bottom {
+        width: 100%;
+        height: 200px;
+    }
+    header {
+        height: 50px;
+        ;
+    }
+    .logo {
+        position: relative;
+    }
+    .logo img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .topnav {
+        display: none;
+    }
+    .container {
+        /* height: auto; */
+        /* width: 100vw; */
+        max-width: 767px;
+        margin: 20px 20px;
+    }
+    .thisTemplateIsAwesome {
+        height: auto;
+        width: 100vw;
+    }
+    .title-1 {
+
+        text-align: left;
+        color: #fff;
+        padding-top: 30px;
+    }
+    .title-1 p {
+        color: #fff;
+        width: 100%;
+        text-align: justify;
+        line-height: 1.3;
+  
+    }
+    .title-1 h1 {
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 1.0;
+        text-align: center;
+    }
+    .slider {
+        text-align: center;
+        margin-top: 30px;
+        /* margin-bottom: 30px; */
+        padding-bottom: 30px;
+    }
+    .circle {
+        height: auto;
+        width: 100vw;
+        background-color: #fff;
+        text-align: center;
+    }
+    .container3 {
+        height: auto;
+        width: 100vw;
+    }
+
+}

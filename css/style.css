@@ -11,66 +11,108 @@ body {
     margin-top: 30px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /*=============================================
 =            HEADER            =
 =============================================*/
 
-.logo {
+.logo img {
     position: absolute;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    height: 50px;
+    vertical-align: middle;
 }
 
-.topnav {
+/* .topnav {
     background-color: #fff;
     height: 50px;
     position: absolute;
     top: 22px;
     right: 380px;
     text-align: center;
-}
+} */
 
-header {
+/* header {
     height: 100px;
     background-color: #fff;
-}
+    
+} */
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.topnav li {
+/* .topnav li {
     float: right;
     display: block;
-    text-align: center;
     padding: 0 16px;
     font-size: 17px;
-}
+} */
 
 .dropdown ul {
     display: none;
     position: absolute;
-    top: 30px;
-    right: 0;
-    padding: 10px;
-    line-height: 1.6;
 }
 
-.dropdown ul li {
-    text-align: right;
+header nav .topnav .dropdown ul li {
+    display: block;
 }
 
 .dropdown:hover ul {
     display: block;
 }
 
-.dropdown li {
+.dropdown ul li {
     display: block;
     float: none;
 }
 
-a {
+header nav .topnav ul li.dropdown li {
+    float: none;
+    margin: 0 auto;
+    line-height: 1.6;
+    /* text-align: right; */
+}
+
+header {
+    padding: 30px 0;
+    height: 100px;
+    background-color: #fff;
+}
+
+header nav .container h1 {
+    margin: 0;
+    /* text-indent: -10000px; */
+    background-image: url("/img/slice-2.png");
+    width: 400px;
+    height: 80px;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    float: left;
+}
+
+header nav .topnav {
+    float: right;
+}
+
+header nav .topnav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav .topnav li {
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header nav .topnav a {
     text-decoration: none;
-    color: black;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /*=============================================
@@ -372,7 +414,7 @@ h2 {
 }
 
 .template-advantages {
-    width: 1920px;
+    max-width: 1920px;
     height: 700px;
     background-color: #e1ac66;
 }
@@ -382,7 +424,7 @@ h2 {
 =============================================*/
 
 .meetTheTeam {
-    width: 1920px;
+    max-width: 1920px;
     height: 630px;
     background-color: #fff;
 }

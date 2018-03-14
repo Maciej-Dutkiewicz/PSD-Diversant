@@ -4,12 +4,6 @@
 
 @media(min-width: 1200px) {}
 
-/* @media(max-width: 767px) {
-    .map {
-        max-width: 767px;
-    }
-} */
-
 @media only screen and (max-width: 767px) {
     html {
         max-width: 100%;
@@ -22,6 +16,7 @@
     }
     .map {
         max-width: 100%;
+        height: auto;
     }
     .map-bottom {
         width: 100%;
@@ -32,23 +27,23 @@
         ;
     }
     .logo {
-        position: relative;
+        /* position: relative; */
+        display: block;
+        width: 100%;
     }
-    .logo img {
+    /* .logo img {
         position: absolute;
         margin: auto;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-    }
+    } */
     .topnav {
-        display: none;
+        /* display: none; */
     }
     .container {
-        /* height: auto; */
         width: auto;
-        /* max-width: 767px; */
         margin: 10px 10px;
     }
     .thisTemplateIsAwesome {
@@ -75,7 +70,6 @@
     .slider {
         text-align: center;
         margin-top: 30px;
-        /* margin-bottom: 30px; */
         padding-bottom: 30px;
     }
     .circle {
@@ -177,20 +171,45 @@
     }
     .blog {
         height: auto;
-        /* width: auto; */
     }
     .imgContainer {
         width: auto;
-        display: grid;
     }
     .imgContainer img {
-      align-items: center;
-      justify-content: center;
-        
+        width: auto;
+        margin: 0;
+        padding: 15px;
+    }
+    .boox {
+        text-align: center;
     }
     .blogDate {
-        /* width: 60vw; */
+        position: static;
+        width: auto;
     }
+    .part .title p {
+        width: auto;
+    }
+    .part {
+        height: auto;
+    }
+    .partnersImg {
+        text-align: center;
+    }
+    input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    /* #burger-nav{
+    width: 100%;
+    height: 40px;
+
+    cursor: pointer;
+    background-color: indianred;
+    display: block;
+} */
     .col-s-1 {
         width: 8.33%;
     }

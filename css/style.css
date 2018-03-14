@@ -804,6 +804,14 @@ footer {
     height: 300px;
 }
 
+/* #burger-nav{
+    width: 100%;
+    height: 40px;
+    background: url(images/burger.png) no-repeat 98% center;
+    cursor: pointer;
+    background-color: indianred;
+} */
+
 /*=============================================
 =            GRID            =
 =============================================*/

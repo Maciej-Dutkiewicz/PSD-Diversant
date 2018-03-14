@@ -47,8 +47,8 @@
     }
     .container {
         /* height: auto; */
-        /* width: 100vw; */
-        max-width: 767px;
+        width: auto;
+        /* max-width: 767px; */
         margin: 10px 10px;
     }
     .thisTemplateIsAwesome {
@@ -89,14 +89,15 @@
         width: 100vw;
     }
     .recentTemplates {
-        height: 100vh;
+        height: auto;
+        text-align: center;
     }
     .title p {
         width: 80vw;
     }
     .recentTemplates div.tabs-container img {
-        width: 20vh;
-        height: 10vh;
+        width: 100%;
+        height: auto;
         padding: 0;
     }
     .center {
@@ -106,7 +107,89 @@
     .tabs-container {
         overflow: hidden;
         height: auto;
-        width: 90vw;
+        width: auto;
+    }
+    .templateFeatures {
+        width: auto;
+        height: auto;
+    }
+    .pos-change {
+        height: auto;
+    }
+    .cont,
+    .position {
+        position: static;
+        text-align: center;
+    }
+    .template-advantages {
+        height: auto;
+        text-align: center;
+    }
+    .meetTheTeam {
+        height: auto;
+    }
+    .testimonials {
+        height: auto;
+    }
+    .imgDesc {
+        width: auto;
+        text-align: center;
+    }
+    .imgQuote .box h2 {
+        text-align: center;
+    }
+    .howItWorks {
+        width: auto;
+        height: auto;
+    }
+    iframe {
+        width: auto;
+        height: auto;
+        border: none;
+    }
+    div.youTube {
+        width: auto;
+    }
+    div.youTubeText {
+        text-align: center;
+    }
+    .howItWorks div .videoText {
+        width: auto;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .templateProperties {
+        height: auto;
+    }
+    .faq {
+        height: auto;
+        width: auto;
+    }
+    .faq .title p {
+        width: 80vw;
+    }
+    .moveLeft {
+        text-align: center;
+    }
+    .plusMinus {
+        display: initial;
+        margin: 0;
+    }
+    .blog {
+        height: auto;
+        /* width: auto; */
+    }
+    .imgContainer {
+        width: auto;
+        display: grid;
+    }
+    .imgContainer img {
+      align-items: center;
+      justify-content: center;
+        
+    }
+    .blogDate {
+        /* width: 60vw; */
     }
     .col-s-1 {
         width: 8.33%;

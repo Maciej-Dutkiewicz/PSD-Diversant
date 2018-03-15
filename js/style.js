@@ -70,7 +70,7 @@
 //     $(".tabs-container .row").addClass("animation");
 // })
 
-$(".btn-gall").click(function () {
+$(".btn-gall").click(function() {
     var tab = $(this).index();
     $(".tabs-container .transition").hide().removeClass("animation");
     $(".tabs-container .transition").eq(tab).show().addClass("animation");
@@ -80,7 +80,7 @@ $(".btn-gall").click(function () {
 });
 
 
-$(".plusMinus").click(function () {
+$(".plusMinus").click(function() {
     $(this).next().slideToggle();
 
     if ($(this).text() == ("+"))
@@ -88,3 +88,12 @@ $(".plusMinus").click(function () {
     else
         $(this).text("+").css("background-color", "#656565");
 });
+
+
+$('#hamburger').click(function() {
+    $(this).toggleClass('animate-ham');
+})
+
+$("#hamburger").click(function() {
+    $("header ul").toggleClass("open-menu");
+})

@@ -20,99 +20,76 @@ body {
 =            HEADER            =
 =============================================*/
 
-.logo img {
-    position: absolute;
-    /* text-align: center; */
-    /* margin: 0 auto; */
-    height: 50px;
-    vertical-align: middle;
+.hamburger {
+    display: none;
 }
 
-/* .topnav {
-    background-color: #fff;
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
     height: 50px;
-    position: absolute;
-    top: 22px;
-    right: 380px;
-    text-align: center;
-} */
+    line-height: 50px;
+    width: 100px;
+    font-size: 16px;
+}
 
-/* header {
-    height: 100px;
-    background-color: #fff;
-    
-} */
+nav {
+    width: 1200px;
+    position: static;
+    /* display: inline-block; */
+    margin: 0 auto;
+}
 
-/* .topnav li {
+nav ul {
     float: right;
-    display: block;
-    padding: 0 16px;
-    font-size: 17px;
-} */
+    /* margin-top: 30px; */
+}
 
-.dropdown ul {
+header ul {
+    background-color: #fff;
+    ;
+    text-align: center;
+    padding: 0;
+    font-size: 0;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul {
     display: none;
     position: absolute;
-}
-
-header nav .topnav .dropdown ul li {
-    display: block;
-}
-
-.dropdown:hover ul {
-    display: block;
-}
-
-.dropdown ul li {
-    display: block;
-    float: none;
-}
-
-header nav .topnav ul li.dropdown li {
-    float: none;
-    margin: 0 auto;
-    line-height: 1.6;
-    /* text-align: right; */
-}
-
-header {
-    padding: 30px 0;
-    height: 100px;
-    background-color: #fff;
-}
-
-header nav .container h1 {
     margin: 0;
-    /* text-indent: -10000px; */
-    background-image: url("/img/slice-2.png");
-    width: 400px;
-    height: 80px;
-    /* display: inline-block; */
-    /* vertical-align: middle; */
-    float: left;
 }
 
-header nav .topnav {
-    float: right;
+/* li:hover {
+	background-color: #589195;
+} */
+
+nav li:hover ul {
+    display: block;
 }
 
-header nav .topnav ul {
-    margin: 0;
-    padding: 0;
+.centernav {
+    display: inline-block;
+    /* margin-top: 30px; */
+    /* margin: 0 auto; */
+    height: 50px;
 }
 
-header nav .topnav li {
-    list-style-type: none;
-    float: left;
-    margin-left: 20px;
-    margin-top: 10px;
+.centernav img {
+    padding: 5px;
 }
 
-header nav .topnav a {
-    text-decoration: none;
-    color: #4e4e4e;
-    text-transform: uppercase;
-    font-weight: bold;
+.floatfix:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /*=============================================
@@ -216,7 +193,9 @@ header nav .topnav a {
     height: 90px;
 }
 
-/* section3 */
+/*=============================================
+=            .recentTempltes       =
+=============================================*/
 
 .tabs-container {
     overflow: hidden;
@@ -232,8 +211,6 @@ header nav .topnav a {
     height: 100%;
     opacity: 0.4;
 }
- 
-
 
 .transition {
     opacity: 0.1;
@@ -666,7 +643,6 @@ iframe {
     width: 340px;
     height: 220px;
     margin: 15px;
-    
 }
 
 .imgContainer:hover {

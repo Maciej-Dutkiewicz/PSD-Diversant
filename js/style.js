@@ -130,3 +130,30 @@ $("#hamburger").click(function() {
 //     // restartInterval();
 //     console.log(currentSlide);
 // });
+
+
+// var dane2 = {
+//     class: "p89",
+//     spanVal: "89%"
+// }
+
+// // console.log(dane2.class);
+// // console.log(dane2.spanVal);
+// var data2 = JSON.parse(dane);
+
+
+// console.log(data2.class);
+
+$.ajax({ 
+    type: 'GET', 
+    url: 'dane.json', 
+    dataType: 'json',
+    success: function (data) { 
+       console.log(data)
+        $.each(data, function(index, element) {
+            console.log(element.chart);
+            $(".charts .col-3").eq(index).find(".c100").addClass("p"+ element.chart);
+            $(".charts .col-3").eq(index).find("span").text(element.chart +"%")
+        });
+    }
+});

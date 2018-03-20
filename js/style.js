@@ -76,7 +76,6 @@ $(".btn-gall").click(function() {
     $(".tabs-container .transition").eq(tab).show().addClass("animation");
     $(".btn-gall").removeClass("active");
     $(this).addClass("active");
-    // console.log(tab);
 });
 
 
@@ -89,7 +88,7 @@ $(".plusMinus").click(function() {
         $(this).text("+").css("background-color", "#656565");
 });
 
-
+//hamburger
 $('#hamburger').click(function() {
     $(this).toggleClass('animate-ham');
 })
@@ -97,3 +96,37 @@ $('#hamburger').click(function() {
 $("#hamburger").click(function() {
     $("header ul").toggleClass("open-menu");
 })
+
+
+//slideshow
+// var currentSlide = 0
+// var carouselList = $('#carousel ul');
+
+// function changeSlide() {
+//     carouselList.animate({
+//         'marginLeft': -1200
+//     }, 500, moveFirstSlide);
+// };
+
+// function moveFirstSlide() {
+//     var firstItem = carouselList.find("li:first");
+//     var lastItem = carouselList.find("li:last");
+
+//     lastItem.after(firstItem);
+//     carouselList.css({
+//         marginLeft: 0
+//     });
+// };
+
+// setInterval(changeSlide, 5000);
+
+
+
+
+
+// $(".slider").on('click', 'button', function() {
+//     currentSlide = $(this).index();
+//     // renderSlide(currentSlide);
+//     // restartInterval();
+//     console.log(currentSlide);
+// });

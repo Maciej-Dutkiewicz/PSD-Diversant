@@ -20,18 +20,16 @@ a { color: #000; text-decoration: none;}
 =            .thisTemplateIsAwesome           =
 =============================================*/
 .thisTemplateIsAwesome { margin: 0 auto; height: 450px; background-color: #589195;}
-.thisTemplateIsAwesome .container { height: 500px;}
-.thisTemplateIsAwesome .container #carousel li { float: left; list-style: none;}
-#carousel { /*position: absolute;*/ height: 400px; margin: 0 auto; overflow: hidden;}
-#carousel ul { margin: 0; padding: 0;}
-.title-1 { padding-top: 50px; line-height: 1.6; text-align: left; color: #fff; overflow: hidden;}
-.title-1 p { width: 850px; color: #fff; text-align: justify; line-height: 1.6;}
-.title-1 h1 { margin: 0 auto; font-size: 40px; line-height: 1.0;}
+.thisTemplateIsAwesome .container { height: 450px;}
+div.slide ol li { color: #000; background-color: #000;}
+.carousel-indicators .active { background-color: #000;}
+div.item { height: 450px; background-color: #589195;}
+.centerThisDiv { padding-top: 80px;}
+#myCarousel .centerThisDiv h1 { color:#fff;}
+#myCarousel .centerThisDiv p { color:#fff;}
+.centerThisDiv p { width: 650px}
 .read-more { width: 140px; font-size: 20px; text-transform: uppercase; border-radius: 5px; cursor: pointer; border: none; outline: none;}
 .read-more:hover { background: #000; color: #fff; border: none; outline: none;}
-.slider { /*padding-top: 400px;*/ text-align: center;}
-.slider-circle { width: 20px; height: 20px; line-height: 50px; border: 2px solid #fff; border-radius: 50%; color: #f5f5f5; text-align: center; text-decoration: none; background: #589195; box-shadow: 0 0 3px gray; font-size: 20px; font-weight: bold; cursor: pointer; outline: none;}
-.slider-circle:hover { background: #fff; outline: none;}
 /*=============================================
 =            .circle        =
 =============================================*/
@@ -74,10 +72,10 @@ div .cont h2 { color: #17405a;}
 =============================================*/
 .template-advantages { max-width: 1920px; height: 700px; background-color: #e1ac66;}
 .circle1 { position: absolute; left: 0px; right: 0; width: 92px; height: 92px; margin: 0 auto; border: 2px solid #fff; border-radius: 50%; color: #000; text-align: center; text-decoration: none; box-shadow: 0 0 3px gray; font-size: 50px; font-weight: bold; background-color: #fff;}
-.circle1 p { display: inline-block; margin: 16% 16%;}
+.circle1 p { display: inline-block; margin: 16% 16%; font-size: 30px;}
 .advantages { position: relative; height: 250px; }
 .description { margin-top: 100px; }
-.description p, h2 { color: #fff;}
+.description p, h3 { color: #fff; text-align: center;}
 /*=============================================
 =            .meetTheTeam            =
 =============================================*/
@@ -86,14 +84,14 @@ div .cont h2 { color: #17405a;}
 .meetTheTeam .title p { color: #17405a;}
 .personDescription { text-align: center;}
 .icon-btn { display: inline-block; height: 40px; width: 40px; margin: 10px; background-color: #1b5b6b; border-radius: 50%; cursor: pointer; font-size: 25px; line-height: 40px; text-align: center; color: #fff; opacity: 0.5;}
-.icon-btn:hover { opacity: 1.0;}
+.icon-btn:hover { opacity: 1.0; color: #fff;}
 /*=============================================
 =            .testimonials            =
 =============================================*/
 .testimonials { height: 400px; background-color: #285B6A;text-align: center;}
 .box { display: inline-block; height: 200px; text-align: center; vertical-align: middle;}
 .imgQuote { text-align: center; vertical-align: middle;}
-.imgQuote .box h2 { margin: 0; text-align: left;}
+.imgQuote .box h2 { margin: 0; text-align: left; color: #fff;}
 .imgQuote .box p { text-align: left; color: #fff; line-height: 1.6;}
 .imgBox { width: 200px;}
 .imgDesc { width: 400px;}
@@ -125,7 +123,7 @@ iframe { width: 570px; height: 340px; border: none;}
 .faq .title h1 { padding-top: 30px; margin: 0; text-transform: uppercase; font-size: 40px; color: #17405a;}
 .faq .title p { width: 600px; margin: 10px auto 0 auto; color: #17405a;}
 .moveLeft { text-align: left;}
-.faqH3 { display: inline-block; width: 250px; margin-top: 15px; margin-bottom: 15px; text-align: left;}
+.faqH3 { display: inline-block; width: 250px; margin-top: 15px; margin-bottom: 15px; text-align: left; color: #17405a}
 .plusMinus { display: inline-block; width: 45px; height: 45px; margin: 15px 0 15px 60px; background-color: #646464; border-radius: 50%; cursor: pointer; font-size: 25px; line-height: 40px; text-align: center; color: #fff; vertical-align: top; border: none; outline: none;}
 .divButton { display: none;}
 .divButton p { margin: 10px auto;}
@@ -143,15 +141,15 @@ iframe { width: 570px; height: 340px; border: none;}
 /*=============================================
 =           .part            =
 =============================================*/
-.part { height: 350px; background-color: #fff;}
+.part { height: 355px; background-color: #fff;}
 .part .title h1 { padding-top: 30px; margin: 0; text-transform: uppercase; font-size: 40px; color: #17405a;}
 .part .title p { width: 600px; margin: 10px auto 0 auto; color: #17405a;}
-.partnersImg { margin-top: 50px;}
-.blox { display: inline-block; margin-left: 25px; margin-right: 25px;}
+.partnersImg { margin-top: 50px; text-align: center;}
+.blox { display: inline-block; margin-left: 20px; margin-right: 20px; }
 /*=============================================
 =           .contact            =
 =============================================*/
-.contact { height: 620px; background-color: #282828; text-align: center;}
+.contact { height: 650px; background-color: #282828; text-align: center;}
 input { display: block; width: 500px; height: 30px; margin: 0 auto; margin-top: 10px; border-radius: 5px; outline-color: #fff;}
 textarea { margin: 0 auto;}
 label { display: block; margin: 0 auto; color: #ff0000;}

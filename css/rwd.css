@@ -21,16 +21,21 @@
     /* END HAMBURGER */
     nav li { height: 73px; line-height: 73px;}
     header ul li { display: none; width: 100%; border-top: 1px solid #bebbbb; text-align: center;}
-    header ul { position: absolute; right: -500px; top: 74px; transition: linear 0.9s;}
+    header ul { position: absolute; right: -500px; top: 70px; transition: linear 0.9s;}
     ul.open-menu li { display: block;}
-    ul.open-menu { position: absolute; right: 0; top: 74px; width: 100%;}
+    ul.open-menu { position: absolute; right: 0; top: 70px; width: 100%; z-index: 30;}
     header ul li ul li { display: none; }
     .container { width: auto; margin: 10px 10px; }
-    .thisTemplateIsAwesome { width: 100vw; height: auto;}
-    .title-1 { padding-top: 30px; text-align: left; color: #fff;}
-    .title-1 p { width: 100%; color: #fff; text-align: justify; line-height: 1.3;}
-    .title-1 h1 { margin: 0 auto; font-size: 30px; line-height: 1.0; text-align: center;}
-    .slider { margin-top: 30px; padding-bottom: 30px; text-align: center;}
+    .centerThisDiv { padding: 0;}
+    div.item { height: auto;}
+    .thisTemplateIsAwesome { height: 300px;}
+    .thisTemplateIsAwesome .container { height: 300px;}
+    ol.carousel-indicators {bottom: -70px;}
+    /* .thisTemplateIsAwesome { width: 100vw; height: auto;} */
+    /* .title-1 { padding-top: 30px; text-align: left; color: #fff;} */
+    /* .title-1 p { width: 100%; color: #fff; text-align: justify; line-height: 1.3;} */
+    /* .title-1 h1 { margin: 0 auto; font-size: 30px; line-height: 1.0; text-align: center;} */
+    /* .slider { margin-top: 30px; padding-bottom: 30px; text-align: center;} */
     .circle { width: 100vw; height: auto; background-color: #fff; text-align: center;}
     .container3 { width: 100vw; height: auto;}
     .recentTemplates { height: auto; text-align: center;}
@@ -98,12 +103,12 @@
     /* END HAMBURGER */
     nav li { height: 73px; line-height: 73px;}
     header ul li { display: none; width: 100%; border-top: 1px solid #bebbbb; text-align: center;}
-    header ul { position: absolute; right: -500px; top: 74px; transition: linear 0.9s;}
+    header ul { position: absolute; right: -500px; top: 70px; transition: linear 0.9s;}
     ul.open-menu li { display: block;}
-    ul.open-menu {position: absolute; top: 74px; right: 0; width: 100%;}
+    ul.open-menu {position: absolute; top: 70px; right: 0; width: 100%; z-index: 30;}
     header ul li ul li { display: none;}
     .container { width: auto; margin: 10px 10px;}
-    .thisTemplateIsAwesome { height: auto; width: 100vw;}
+    .thisTemplateIsAwesome { height: 450px; width: 100vw;}
     .title-1 { text-align: left; color: #fff; padding-top: 30px;}
     .title-1 p { width: 100%; color: #fff; text-align: justify; line-height: 1.3;}
     .title-1 h1 { margin: 0 auto; font-size: 30px; line-height: 1.0; text-align: center;}
@@ -116,7 +121,7 @@
     .title p { width: 80vw;}
     .recentTemplates div.tabs-container img { width: 100%; height: auto; padding: 0;}
     .center { padding-bottom: 10px; padding-top: 0;}
-    .tabs-container { height: auto; width: auto;}
+    .tabs-container { height: 880px; width: auto;}
     .templateFeatures { width: auto; height: auto;}
     .pos-change { height: auto;}
     .cont, .position { position: static; text-align: center;}

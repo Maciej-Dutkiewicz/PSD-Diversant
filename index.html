@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/circle-percent.css">
     <link rel="stylesheet" href="css/rwd.css">
@@ -67,11 +67,19 @@
     </header>
     <section class="thisTemplateIsAwesome">
         <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-            <div id="carousel">
-                <ul>
-                    <li class="slide" data-slide="0">
-                        <div class="title-1">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="centerThisDiv">
+
                             <h1>This Template
                                 <br> is Awesome!</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est tenetur ex ipsa natus suscipit distinctio nesciunt enim obcaecati delectus. adipisicing elit. Est tenetur ex ipsa natus suscipit distinctio nesciunt enim obcaecati
@@ -79,17 +87,18 @@
                             </p>
                             <button class="read-more">read more</button>
                         </div>
-                    </li>
-                    <!-- <li class="slide" data-slide="1"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/DUQNFOC83Q.jpg" alt="air jordan" width="600" height="400"></li> -->
-                    <!-- <li class="slide" data-slide="2"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/1QLDSJ5XB4.jpg" alt="basket" width="600" height="400"></li> -->
-                </ul>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/pexels-photo-688559.jpeg" alt="Chicago">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/pexels-photo.jpg" alt="New york">
+                    </div>
+                </div>
             </div>
 
-            <div class="slider">
-                <button class="slider-circle" data-dot="0"></button>
-                <button class="slider-circle" data-dot="1"></button>
-                <button class="slider-circle" data-dot="2"></button>
-            </div>
         </div>
     </section>
     <section class="circle">
@@ -340,7 +349,7 @@
                         <p>1.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -349,7 +358,7 @@
                         <p>2.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -358,7 +367,7 @@
                         <p>3.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -367,7 +376,7 @@
                         <p>4.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -376,7 +385,7 @@
                         <p>5.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -385,7 +394,7 @@
                         <p>6.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -394,7 +403,7 @@
                         <p>7.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -403,7 +412,7 @@
                         <p>8.</p>
                     </div>
                     <div class="description">
-                        <h2>Lorem ipsum dolor sit.</h2>
+                        <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet interdum wisi dui auctor velit. Pellentesque eget lacus nonummy nunc.</p>
                     </div>
                 </div>
@@ -712,7 +721,7 @@
                 <br>
                 <input type="text" name="email" placeholder="E-mail: ">
                 <br>
-                <textarea rows="15" cols="80" class="message" name="textarea" placeholder="Message: "></textarea>
+                <textarea rows="15" cols="68" class="message" name="textarea" placeholder="Message: "></textarea>
                 <br>
                 <input id="submit-button" class="submit" type="submit" value="Submit">
             </form>
@@ -725,8 +734,8 @@
         <iframe class="map-bottom" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGLgdu2CU7L6ITnH9m0Hb2GUQRuqUk40c&q=Columbia+Heights,Brooklyn+NY " allowfullscreen>
         </iframe>
     </section>
-
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
     <script src="js/style.js"></script>
     <script src="js/validation.js"></script>

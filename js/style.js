@@ -158,13 +158,15 @@ $.getJSON(jsonFile, addClass);
 }
 
 function addClass (data) {
-    console.log(data)
+    // console.log(data)
         $.each(data, function(index, element) {
-            console.log(element);
-            console.log(index);
+            // console.log(element);
+            // console.log(index);
             $(".charts .col-3").eq(index).find(".c100").addClass("p"+ element.chart);
             $(".charts .col-3").eq(index).find("span").text(element.chart +"%")
         });
 }
 getData ();
 
+
+$("#form").append("<div class='error popup'></div>");

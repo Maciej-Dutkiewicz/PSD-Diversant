@@ -1,4 +1,7 @@
 $(function() {
+    $("#form").submit(function(e) {
+        e.preventDefault()
+    });
     $("#form").validate({
         rules: {
             email: {
@@ -27,6 +30,38 @@ $(function() {
                 required: "Message is required",
                 minlength: "Please write at least 10 characters"
             }
+        },
+        submitHandler: function(form) {
+
+            sendWhiteForm();
+           
         }
     });
 });
+
+
+function sendWhiteForm() {
+    $.ajax({
+        type: "post",
+        url: "/ajax/Form/AppDetails/",
+        data: $("#form").serialize(),
+        dataType: "json",
+        success: function(ret) {
+            if (ret["status"] == 0) {
+                console.log("jest ok")  // stworzyć diva z podziekowaniem
+            } else {
+                if (ret["status"] == 1) { // div wyswietlajace info bledne dane
+                    $("label.error").remove();
+                    $.each(ret["errors"], function(idx, val) {});
+                    console.log("1")
+                } else {
+                    console.log("else")
+                }
+            }
+        },
+        error: function() {
+            console.log("error")//popup zrobić
+        }
+    })
+}
+

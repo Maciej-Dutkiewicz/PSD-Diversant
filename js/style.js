@@ -169,4 +169,4 @@ function addClass (data) {
 getData ();
 
 
-$("#form").append("<div class='error popup'></div>");
+// $("#form").append("<div class='error popup'></div>");

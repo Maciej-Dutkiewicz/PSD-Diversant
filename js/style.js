@@ -70,7 +70,7 @@
 //     $(".tabs-container .row").addClass("animation");
 // })
 
-$(".btn-gall").click(function() {
+$(".btn-gall").click(function () {
     var tab = $(this).index();
     $(".tabs-container .transition").hide().removeClass("animation");
     $(".tabs-container .transition").eq(tab).show().addClass("animation");
@@ -79,7 +79,7 @@ $(".btn-gall").click(function() {
 });
 
 
-$(".plusMinus").click(function() {
+$(".plusMinus").click(function () {
     $(this).next().slideToggle();
 
     if ($(this).text() == ("+"))
@@ -89,11 +89,11 @@ $(".plusMinus").click(function() {
 });
 
 //hamburger
-$('#hamburger').click(function() {
+$('#hamburger').click(function () {
     $(this).toggleClass('animate-ham');
 })
 
-$("#hamburger").click(function() {
+$("#hamburger").click(function () {
     $("header ul").toggleClass("open-menu");
 })
 
@@ -153,20 +153,88 @@ $("#hamburger").click(function() {
 // });
 
 var jsonFile = "dane.json";
-function getData () {
-$.getJSON(jsonFile, addClass);
+
+function getData() {
+    $.getJSON(jsonFile, addClass);
 }
 
-function addClass (data) {
+function addClass(data) {
     // console.log(data)
-        $.each(data, function(index, element) {
-            // console.log(element);
-            // console.log(index);
-            $(".charts .col-3").eq(index).find(".c100").addClass("p"+ element.chart);
-            $(".charts .col-3").eq(index).find("span").text(element.chart +"%")
-        });
+    $.each(data, function (index, element) {
+        // console.log(element);
+        // console.log(index);
+        $(".charts .col-3").eq(index).find(".c100").addClass("p" + element.chart);
+        $(".charts .col-3").eq(index).find("span").text(element.chart + "%")
+    });
 }
-getData ();
-
+getData();
 
 // $("#form").append("<div class='error popup'></div>");
+
+
+// Popup close clicking ESC button
+$(document).keyup(function (e) {
+    if (e.keyCode == 27) {
+        $(".popup").hide();
+    }
+});
+
+
+// Carousel move left - right using arrow keyboard 
+
+// $(document).keydown(function (e) {
+//     if (e.keyCode === 37) {
+//         $('a.carousel-control.left').trigger('click');
+//     }
+//     if (e.keyCode === 39) {
+//         $('a.carousel-control.right').trigger('click');
+//     }
+// });
+
+
+// $(document).bind('keyup', function (e) {
+//     if (e.keyCode == 39) {
+//         $('a.carousel-control.right').trigger('click');
+//     } else if (e.keyCode == 37) {
+//         $('a.carousel-control.left').trigger('click');
+//     }
+// });
+
+// var foo = function (e) {
+//     if (e.keyCode == 39) {
+//         $('a.carousel-control.right').trigger('click');
+//     } else if (e.keyCode == 37) {
+//         $('a.carousel-control.left').trigger('click');
+//     }
+// };
+// $(document).on("click", foo);
+// foo();
+
+// $(document).keydown(function (e) {
+//     if (e.keyCode === 37) {
+//         $('a.carousel-control.left').click();
+//     }
+//     if (e.keyCode === 39) {
+//         $('a.carousel-control.right').click();
+//     }
+// });
+
+function time() {
+    setTimeout(function () {
+        console.log("test");
+        $(document).keydown(function (e) {
+            if (e.which === 37) {
+                $('a.carousel-control.left').click();
+            }
+            if (e.which === 39) {
+                $('a.carousel-control.right').click();
+            }
+        });
+    }, 5000);
+}
+
+$( document ).ready(function() {
+    $('a.carousel-control.left').click();
+    time();
+});
+

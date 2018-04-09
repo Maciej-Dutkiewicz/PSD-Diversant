@@ -149,7 +149,7 @@ iframe { width: 570px; height: 340px; border: none;}
 /*=============================================
 =           .contact            =
 =============================================*/
-.contact { height: 650px; background-color: #282828; text-align: center;}
+.contact { height: 800px; background-color: #282828; text-align: center;}
 input { display: block; width: 500px; height: 30px; margin: 0 auto; margin-top: 10px; border-radius: 5px; outline-color: #fff;}
 textarea { margin: 0 auto;}
 label { display: block; margin: 0 auto; color: #ff0000;}
